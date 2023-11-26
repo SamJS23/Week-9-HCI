@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#Home").click(function () {
+                $("#desc,#gen,#edu,#hob,#program,#sos").show();
+            });
+            $("#Description").click(function () {
+                $("#gen,#edu,#hob,#program,#sos").hide();
+                $("#desc").show();
+            });
+            $("#Gender").click(function () {
+                $("#desc,#edu,#hob,#program,#sos").hide();
+                $("#gen").show();
+            });
+            $("#Education").click(function () {
+                $("#desc,#gen,#hob,#program,#sos").hide();
+                $("#edu").show();
+            });
+            $("#Hobbies").click(function () {
+                $("#desc,#gen,#edu,#program,#sos").hide();
+                $("#hob").show();
+            });
+            $("#Skills").click(function () {
+                $("#desc,#gen,#hob,#edu,#sos").hide();
+                $("#program").show();
+            });
+            $("#Sosmed").click(function () {
+                $("#desc,#gen,#hob,#program,#edu").hide();
+                $("#sos").show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a id="Home">Home</a>
+        <a id="Description">Description</a>
+        <a id="Gender">Gender</a>
+        <a id="Education">Education</a>
+        <a id="Hobbies">Hobbies</a>
+        <a id="Skills"> Programming Skills</a>
+        <a id="Sosmed">Social Media</a>
+    </div>
+
+    <div class="content">
+        <h1 id="port"> My Portfolio</h1>
+        <div id="desc" class="col-12">
+            <h1 class="identity">Samuel James Setiadi</h1>
+            <h3 class="identity">2702357876 - L1CC</h3>
+            <div class="wrap">
+                <img src="profile picture.jpg" width="165px" height="192px">
+            </div>
+            <H3>Description</H3>
+            <p>I am currently a student at Binus International University majoring in Computer Science. I am originally
+                from Cirebon, which is a city in West Java. I studied at an international school in Cirebon, called
+                Sekolah Pelita Bangsa, for 16 years of my life. I chose to major in computer science because I have a
+                passion for coding and am eager to learn more about the world of IT.</p></dbr>
+        </div>
+        <div id="gen" class="col-12">
+            <h3> Gender </h3>
+            <input type="radio"> <label> male </label> <input type="radio"> <label> female </label>
+        </div>
+        <div id="edu" class="col-12">
+            <h3>Education</h3>
+            <ol>
+                <li><a href="https://pelitabangsa.com/id/">Sekolah Pelita Bangsa</a> 2007 - 2023 </li>
+                <li><a href="https://international.binus.ac.id/">Binus International University</a> 2023 - present </li>
+            </ol>
+        </div>
+        <div id="hob" class="col-12">
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Playing video games</li>
+                <li>Playing tennis</li>
+                <li>Watching soccer</li>
+            </ul>
+        </div>
+        <div id="program" class="col-12">
+            <h3 id="Programming skills">Programming Skills</h3>
+            <input type="checkbox"> <label> Python </label> <br />
+            <input type="checkbox"> <label> Javascript </label> <br />
+            <input type="checkbox"> <label> HTML </label> <br />
+            <input type="checkbox"> <label> CSS </label> <br />
+        </div>
+        <div id="sos" class="col-12">
+            <h3 id="Social media">Social Media</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/samueljames.s/"> Instagram </a> </li>
+                <li><a href="https://www.facebook.com/profile.php?id=100011336305863">Facebook</a> </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
